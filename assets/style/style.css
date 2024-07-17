@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600&display=swap');
+
+:root {
+    --bg: #ffffff;
+    --black: #090909;
+    --grey: #8e8e8eb5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: var(--black);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+input:focus-visible {
+    outline: none;
+    transform: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s;
+}
+
+input {
+    padding: 10px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 16px;
+    border-color: var(--grey);
+    border-width: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+[type='text'] {
+    cursor: text;
+}
+
+.container {
+    max-width: 1740px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    .navigation__column {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+        padding: 20px;
+        .navigation__fieldset {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+            padding: 15px 10px 10px ;
+            border-radius: 5px;
+            border: 1px solid var(--grey);
+            position: relative;
+            legend {
+                position: absolute;
+                background: var(--bg);
+                top: -13px;
+                padding: 0 3px;
+            }
+        }
+    }
+}
+
+.user {
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .user__card {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 10px;
+        box-shadow: 3px 5px 9px 2px #0000005c;
+        border-radius: 5px;
+        max-width: 322px;
+        .user__photo {
+            display: flex;
+            height: 400px;
+            width: 300px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                box-shadow: 1px 1px 5px 1px #f0eeee;
+            }
+        }
+        .user__name {
+            font-size: 32px;
+            font-weight: 500;
+        }
+        .user__age,
+        .user__gender {
+            font-size: 23px;
+        }
+    }
+
+}

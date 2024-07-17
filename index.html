@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+    <link rel="stylesheet" href="assets/reset/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/media_max_width767.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <div class="navigation__column">
+                <label for="nameFilter">Enter name:</label>
+                <input class="name__input" type="text" name="nameFilter" id="nameFilter">
+            </div>
+            <div class="navigation__column">
+                <label for="ageFilter">Select age:</label>
+                <input class="age__range" type="range" name="AgeFilter" id="AgeFilter" min="38" max="75" value="50" step="1">
+            </div>
+            <div class="navigation__column">
+                <div class="navigation__fieldset">
+                    <legend>Select gender:</legend>
+                    <div class="navigation__column_item">
+                        <input class="gender__radio" type="radio" id="all" name="gender" value="All" checked>
+                        <label for="all">All</label>
+                    </div>
+                    <div class="navigation__column_item">
+                        <input  class="gender__radio"type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="navigation__column_item">
+                        <input  class="gender__radio"type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="user">
+        </div>
+    </div>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>

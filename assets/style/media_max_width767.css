@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+    .navigation {
+        flex-direction: column;
+        .navigation__column {
+            padding: 10px;
+        }
+    }
+    .user {
+        .user__card {
+            max-width: 250px;
+            .user__photo {
+                height: 390px;
+                width: 230px;
+            }
+        }
+    }
+}
